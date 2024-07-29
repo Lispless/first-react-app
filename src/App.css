@@ -57,7 +57,7 @@
   max-width: 80%;
   margin: 5px 0 0 5px;
   border: 4px solid #F98E15;
-  border-radius: 50px;
+  border-radius: 50%;
   float: left;
 }
 
@@ -83,29 +83,47 @@
 }
 
 @media only screen and (min-width: 768px) {
+
   #header {
+    background-color: #6CEAFE;
+    height: 120px;
     display: grid;
-    grid-template-columns: min-content 1fr auto;
-    grid-gap: 5px;
-    box-sizing: border-box;
-    height: 200px;
     width: 100%;
-    padding: 10px;
+    grid-template-areas:
+      "img h1 menu";
+    grid-template-rows: 120px;
+    grid-template-columns: 1fr 80% 1fr;
   }
   
   #header img {
-    border: 8px solid #F98E15;
-    border-radius: 50px;
-    position: relative;
-    max-width: 15%;
+    grid-area: img;
+    max-width: 80%;
+    margin: 12px 0 0 12px;
+    border: 4px solid #F98E15;
+    border-radius: 50%;
     float: left;
   }
   
-  #header div {
+  #header h1 {
+    text-align: center;
+    grid-area: h1;
+    font-size: 4rem;
+    line-height: 0%;
+    margin: 50px 0 0 0px;
+  }
+  
+  #menu {
+    grid-area: menu;
+    height: 50px;
+    width: 50px;
+    margin: 35px 0 0 0;
+  }
+  
+  #menu div {
     width: 35px;
     height: 5px;
     background-color: black;
-    margin: 6px 0;
+    margin: 6px 0 0 30px;
   }
 }
 
