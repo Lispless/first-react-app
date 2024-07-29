@@ -5,11 +5,10 @@ function Header() {
 
     <h1>The Power of React</h1>
 
-    <div>
-      <ul>
-        <li><h6>Filler</h6></li>
-        <li><h6>List</h6></li>
-      </ul>
+    <div id="menu">
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
   </div>;
 }
